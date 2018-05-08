@@ -6,6 +6,7 @@ import org.seckill.dto.Exposer;
 import org.seckill.dto.SeckillExecution;
 import org.seckill.entity.Seckill;
 import org.seckill.entity.SuccessKilled;
+import org.seckill.enums.SeckillStatEnum;
 import org.seckill.exception.RepeatKillException;
 import org.seckill.exception.SeckillCloseException;
 import org.seckill.exception.SeckillException;
@@ -81,7 +82,7 @@ public class SeckillServiceimpl implements SeckillService {
                 }else {
                     //秒杀成功
                     SuccessKilled successKilled = successKillDao.queryByIdWithSeckill(seckillId, userPhone);
-                    return new SeckillExecution(seckillId, 1, "秒杀成功");
+                    return new SeckillExecution(seckillId, SeckillStatEnum.SUCCESS, successKilled);
                 }
             }
         } catch(SeckillCloseException e1){
