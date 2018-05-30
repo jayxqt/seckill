@@ -15,7 +15,7 @@ public class SuccessKilled {
 
     private Date createTime;
 
-    //多对一
+    // 多对一
     private Seckill seckill;
 
     public long getSeckillId() {
@@ -23,7 +23,7 @@ public class SuccessKilled {
     }
 
     public void setSeckillId(long seckillId) {
-        this.seckillId = seckillId;
+        this.seckillId=seckillId;
     }
 
     public long getUserPhone() {
@@ -31,7 +31,7 @@ public class SuccessKilled {
     }
 
     public void setUserPhone(long userPhone) {
-        this.userPhone = userPhone;
+        this.userPhone=userPhone;
     }
 
     public short getState() {
@@ -39,7 +39,7 @@ public class SuccessKilled {
     }
 
     public void setState(short state) {
-        this.state = state;
+        this.state=state;
     }
 
     public Date getCreateTime() {
@@ -47,7 +47,7 @@ public class SuccessKilled {
     }
 
     public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
+        this.createTime=createTime;
     }
 
     public Seckill getSeckill() {
@@ -55,18 +55,12 @@ public class SuccessKilled {
     }
 
     public void setSeckill(Seckill seckill) {
-        this.seckill = seckill;
+        this.seckill=seckill;
     }
-
 
     @Override
     public String toString() {
-        return "SuccessKilled{" +
-                "seckillId=" + seckillId +
-                ", userPhone=" + userPhone +
-                ", state=" + state +
-                ", createTime=" + createTime +
-                ", seckill=" + seckill +
-                '}';
+        return "SuccessKilled{" + "seckillId=" + seckillId + ", userPhone=" + userPhone + ", state=" + state + ", createTime="
+            + createTime + ", seckill=" + seckill + '}';
     }
 }

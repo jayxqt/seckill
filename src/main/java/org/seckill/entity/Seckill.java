@@ -24,7 +24,7 @@ public class Seckill {
     }
 
     public void setSeckillId(long seckillId) {
-        this.seckillId = seckillId;
+        this.seckillId=seckillId;
     }
 
     public String getName() {
@@ -32,7 +32,7 @@ public class Seckill {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name=name;
     }
 
     public int getNumber() {
@@ -40,7 +40,7 @@ public class Seckill {
     }
 
     public void setNumber(int number) {
-        this.number = number;
+        this.number=number;
     }
 
     public Date getStartTime() {
@@ -48,7 +48,7 @@ public class Seckill {
     }
 
     public void setStartTime(Date startTime) {
-        this.startTime = startTime;
+        this.startTime=startTime;
     }
 
     public Date getEndTime() {
@@ -56,7 +56,7 @@ public class Seckill {
     }
 
     public void setEndTime(Date endTime) {
-        this.endTime = endTime;
+        this.endTime=endTime;
     }
 
     public Date getCreateTime() {
@@ -64,18 +64,12 @@ public class Seckill {
     }
 
     public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
+        this.createTime=createTime;
     }
 
     @Override
     public String toString() {
-        return "SecKill{" +
-                "seckillId=" + seckillId +
-                ", name='" + name + '\'' +
-                ", number=" + number +
-                ", startTime=" + startTime +
-                ", endTime=" + endTime +
-                ", createTime=" + createTime +
-                '}';
+        return "SecKill{" + "seckillId=" + seckillId + ", name='" + name + '\'' + ", number=" + number + ", startTime=" + startTime
+            + ", endTime=" + endTime + ", createTime=" + createTime + '}';
     }
 }

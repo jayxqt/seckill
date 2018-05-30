@@ -1,45 +1,44 @@
 package org.seckill.dto;
 
 /**
- * 暴露秒杀地址DOT
- * Created by jay-xqt on 2018/5/8.
+ * 暴露秒杀地址DOT Created by jay-xqt on 2018/5/8.
  */
 public class Exposer {
 
-    //是否开启秒杀
+    // 是否开启秒杀
     private boolean exposed;
 
-    //一种机密措施
+    // 一种机密措施
     private String md5;
 
     private long seckillId;
 
-    //系统当前时间
+    // 系统当前时间
     private long now;
 
-    //开启时间
+    // 开启时间
     private long start;
 
-    //结束时间
+    // 结束时间
     private long end;
 
     public Exposer(boolean exposed, String md5, long seckillId) {
-        this.exposed = exposed;
-        this.md5 = md5;
-        this.seckillId = seckillId;
+        this.exposed=exposed;
+        this.md5=md5;
+        this.seckillId=seckillId;
     }
 
     public Exposer(boolean exposed, long seckillId, long now, long start, long end) {
-        this.exposed = exposed;
-        this.seckillId = seckillId;
-        this.now = now;
-        this.start = start;
-        this.end = end;
+        this.exposed=exposed;
+        this.seckillId=seckillId;
+        this.now=now;
+        this.start=start;
+        this.end=end;
     }
 
     public Exposer(boolean exposed, long seckillId) {
-        this.exposed = exposed;
-        this.seckillId = seckillId;
+        this.exposed=exposed;
+        this.seckillId=seckillId;
     }
 
     public boolean isExposed() {
@@ -47,7 +46,7 @@ public class Exposer {
     }
 
     public void setExposed(boolean exposed) {
-        this.exposed = exposed;
+        this.exposed=exposed;
     }
 
     public String getMd5() {
@@ -55,7 +54,7 @@ public class Exposer {
     }
 
     public void setMd5(String md5) {
-        this.md5 = md5;
+        this.md5=md5;
     }
 
     public long getSeckillId() {
@@ -63,7 +62,7 @@ public class Exposer {
     }
 
     public void setSeckillId(long seckillId) {
-        this.seckillId = seckillId;
+        this.seckillId=seckillId;
     }
 
     public long getNow() {
@@ -71,7 +70,7 @@ public class Exposer {
     }
 
     public void setNow(long now) {
-        this.now = now;
+        this.now=now;
     }
 
     public long getStart() {
@@ -79,7 +78,7 @@ public class Exposer {
     }
 
     public void setStart(long start) {
-        this.start = start;
+        this.start=start;
     }
 
     public long getEnd() {
@@ -87,18 +86,12 @@ public class Exposer {
     }
 
     public void setEnd(long end) {
-        this.end = end;
+        this.end=end;
     }
 
     @Override
     public String toString() {
-        return "Exposer{" +
-                "exposed=" + exposed +
-                ", md5='" + md5 + '\'' +
-                ", seckillId=" + seckillId +
-                ", now=" + now +
-                ", start=" + start +
-                ", end=" + end +
-                '}';
+        return "Exposer{" + "exposed=" + exposed + ", md5='" + md5 + '\'' + ", seckillId=" + seckillId + ", now=" + now + ", start="
+            + start + ", end=" + end + '}';
     }
 }
