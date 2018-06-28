@@ -22,7 +22,7 @@ import java.util.List;
  * Created by jay-xqt on 2018/5/22.
  */
 @Controller
-@RequestMapping("/seckill")
+@RequestMapping("/")
 public class SeckillController {
 
     private final Logger logger=LoggerFactory.getLogger(this.getClass());
